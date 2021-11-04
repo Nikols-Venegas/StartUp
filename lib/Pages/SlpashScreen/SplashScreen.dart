@@ -1,7 +1,8 @@
 import 'dart:async';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:green_pure_/Pages/Login/SignIn.dart';
+import 'package:green_pure_/Pages/RegisterUser/Login/LoginPage.dart';
+import 'package:green_pure_/Pages/RegisterUser/Welcome/WelcomePage.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -14,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(Duration(seconds: 5), () {
       Navigator.of(context)
-          .pushReplacement(MaterialPageRoute(builder: (_) => Login()));
+          .pushReplacement(MaterialPageRoute(builder: (_) => LoginPage()));
     });
   }
 
